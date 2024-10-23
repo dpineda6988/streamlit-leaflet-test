@@ -9,6 +9,7 @@ import folium
 import folium.features
 import requests
 from streamlit_folium import st_folium, folium_static
+import streamlit.components.v1 as components
 
 #######################
 # Page configuration
@@ -121,3 +122,19 @@ with st.sidebar:
     current_df = final_df[final_df['year']==slider_year]
 
 #######################
+components.html("<p>hello</p>")
+st.markdown(
+'''
+  <!-- The div that holds our map -->
+  <div id="map"></div>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+  <!-- D3 JavaScript -->
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <!-- Our JavaScript -->
+  <script type="text/javascript" src="static/js/logic.js"></script>
+
+  ''', unsafe_allow_html=True)
