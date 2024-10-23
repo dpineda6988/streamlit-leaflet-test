@@ -1,1 +1,7 @@
 streamlit
+google-cloud-bigquery==3.26.0
+google-auth-httplib2==0.2.0
+pandas
+folium==0.18.0
+requests==2.32.3
+streamlit_folium==0.23.1
