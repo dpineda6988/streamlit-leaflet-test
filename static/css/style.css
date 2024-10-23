@@ -1,0 +1,38 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+#map {
+  width: 1050px;
+  height: 850px
+}
+
+body,
+html {
+  height: 100%;
+}
+
+
+.legend {
+  padding: 6px 8px;
+  font: 12px Arial, Helvetica, sans-serif;
+  background: white;
+  line-height: 18px;
+}
+
+.legend h4 {
+  text-align: center;
+  font-size: 12px;
+  margin: 2px;
+}
+.legend span {
+  position: relative;
+}
+
+.legend i {
+  width: 18px;
+  height: 18px;
+  float: left;
+  margin: 0 8px 0 0;
+}
